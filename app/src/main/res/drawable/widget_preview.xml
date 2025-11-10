@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background with gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#F8F9FA"
+                android:endColor="#FFFFFF"
+                android:angle="135" />
+            <corners android:radius="16dp" />
+            <stroke android:width="1dp" android:color="#E0E0E0" />
+        </shape>
+    </item>
+
+    <!-- Shadow effect -->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+
+    <!-- Content Area -->
+    <item android:left="12dp" android:top="8dp" android:right="12dp" android:bottom="8dp">
+        <layer-list>
+
+            <!-- WellSync Title Bar -->
+            <item android:height="20dp">
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:startColor="#43A047"
+                        android:endColor="#2E7D32"
+                        android:angle="90" />
+                    <corners android:radius="10dp" />
+                </shape>
+            </item>
+
+            <!-- Habits Section -->
+            <item android:top="28dp" android:height="16dp">
+                <layer-list>
+                    <!-- Habit icon -->
+                    <item android:width="14dp" android:height="14dp" android:top="1dp">
+                        <shape android:shape="oval">
+                            <solid android:color="#43A047" />
+                        </shape>
+                    </item>
+                    <!-- Habit label -->
+                    <item android:left="18dp" android:top="2dp" android:height="4dp" android:right="32dp">
+                        <shape android:shape="rectangle">
+                            <solid android:color="#757575" />
+                            <corners android:radius="2dp" />
+                        </shape>
+                    </item>
+                    <!-- Habit count -->
+                    <item android:right="0dp" android:top="0dp" android:width="20dp" android:height="14dp">
+                        <shape android:shape="rectangle">
+                            <solid android:color="#43A047" />
+                            <corners android:radius="7dp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+
+            <!-- Water Section -->
+            <item android:top="52dp" android:height="18dp">
+                <layer-list>
+                    <!-- Water icon -->
+                    <item android:width="14dp" android:height="14dp" android:top="2dp">
+                        <shape android:shape="oval">
+                            <solid android:color="#2196F3" />
+                        </shape>
+                    </item>
+                    <!-- Water label -->
+                    <item android:left="18dp" android:top="3dp" android:height="4dp" android:right="40dp">
+                        <shape android:shape="rectangle">
+                            <solid android:color="#757575" />
+                            <corners android:radius="2dp" />
+                        </shape>
+                    </item>
+                    <!-- Water progress text -->
+                    <item android:right="0dp" android:top="1dp" android:width="35dp" android:height="6dp">
+                        <shape android:shape="rectangle">
+                            <solid android:color="#2196F3" />
+                            <corners android:radius="3dp" />
+                        </shape>
+                    </item>
+                    <!-- Water progress bar -->
+                    <item android:left="18dp" android:top="11dp" android:right="0dp" android:height="5dp">
+                        <layer-list>
+                            <!-- Progress background -->
+                            <item>
+                                <shape android:shape="rectangle">
+                                    <solid android:color="#E3F2FD" />
+                                    <corners android:radius="2dp" />
+                                </shape>
+                            </item>
+                            <!-- Progress fill (40% of width) -->
+                            <item android:right="60dp">
+                                <shape android:shape="rectangle">
+                                    <solid android:color="#2196F3" />
+                                    <corners android:radius="2dp" />
+                                </shape>
+                            </item>
+                        </layer-list>
+                    </item>
+                </layer-list>
+            </item>
+
+            <!-- Steps Section -->
+            <item android:top="78dp" android:height="18dp">
+                <layer-list>
+                    <!-- Steps icon -->
+                    <item android:width="14dp" android:height="14dp" android:top="2dp">
+                        <shape android:shape="oval">
+                            <solid android:color="#FF9800" />
+                        </shape>
+                    </item>
+                    <!-- Steps label -->
+                    <item android:left="18dp" android:top="3dp" android:height="4dp" android:right="40dp">
+                        <shape android:shape="rectangle">
+                            <solid android:color="#757575" />
+                            <corners android:radius="2dp" />
+                        </shape>
+                    </item>
+                    <!-- Steps count -->
+                    <item android:right="0dp" android:top="1dp" android:width="35dp" android:height="6dp">
+                        <shape android:shape="rectangle">
+                            <solid android:color="#FF9800" />
+                            <corners android:radius="3dp" />
+                        </shape>
+                    </item>
+                    <!-- Steps progress bar -->
+                    <item android:left="18dp" android:top="11dp" android:right="0dp" android:height="5dp">
+                        <layer-list>
+                            <!-- Progress background -->
+                            <item>
+                                <shape android:shape="rectangle">
+                                    <solid android:color="#FFF3E0" />
+                                    <corners android:radius="2dp" />
+                                </shape>
+                            </item>
+                            <!-- Progress fill (70% of width) -->
+                            <item android:right="30dp">
+                                <shape android:shape="rectangle">
+                                    <solid android:color="#FF9800" />
+                                    <corners android:radius="2dp" />
+                                </shape>
+                            </item>
+                        </layer-list>
+                    </item>
+                </layer-list>
+            </item>
+
+        </layer-list>
+    </item>
+
+</layer-list>
