@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WellSync</string>
+
+    <!-- Authentication -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="continue_wellness_journey">Continue your wellness journey</string>
+    <string name="join_wellsync">Join WellSync!</string>
+    <string name="start_wellness_journey">Start your wellness journey today</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="login">Login</string>
+    <string name="register">Create Account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_habits">Habits</string>
+    <string name="nav_mood">Mood</string>
+    <string name="nav_steps">Steps</string>
+    <string name="nav_water_limit">Water</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Dashboard -->
+    <string name="good_morning">Good Morning!</string>
+    <string name="good_afternoon">Good Afternoon!</string>
+    <string name="good_evening">Good Evening!</string>
+    <string name="ready_for_wellness">Ready for your wellness journey?</string>
+    <string name="daily_habits">Daily Habits</string>
+    <string name="todays_mood">Today\'s Mood</string>
+    <string name="step_tracker">Step Tracker</string>
+    <string name="hydration">Hydration</string>
+    <string name="mood_trend">7-Day Mood Trend</string>
+
+    <!-- Habits -->
+    <string name="daily_progress">Daily Progress</string>
+    <string name="my_habits">My Habits</string>
+    <string name="add_habit">Add Habit</string>
+    <string name="reset_progress">Reset Progress</string>
+    <string name="habit_completed">Habit completed!</string>
+    <string name="no_habits_message">No habits added yet.\nTap the + button to add your first habit!</string>
+
+    <!-- Mood -->
+    <string name="mood_journal">Mood Journal</string>
+    <string name="select_mood">Select Your Mood</string>
+    <string name="mood_history">Mood History</string>
+
+    <!-- Widget -->
+    <string name="widget_description">WellSync widget showing pending habits, water intake, and step count</string>
+    <string name="widget_title">WellSync</string>
+    <string name="widget_pending_habits">Pending Habits</string>
+    <string name="widget_water_intake">Water Intake</string>
+    <string name="widget_steps_today">Steps Today</string>
+    <string name="widget_default_count">0</string>
+    <string name="widget_default_water">0/2000 ml</string>
+    <string name="widget_default_steps">/ 10000</string>
+
+    <string name="happy">Happy</string>
+    <string name="excited">Excited</string>
+    <string name="neutral">Neutral</string>
+    <string name="sad">Sad</string>
+    <string name="angry">Angry</string>
+    <string name="shake_tip">💡 Tip: Shake your phone to quickly add a mood entry!</string>
+
+    <!-- Steps -->
+    <string name="steps_today">Steps Today</string>
+    <string name="distance">Distance</string>
+    <string name="calories">Calories</string>
+    <string name="goal_steps">Goal: 10,000 steps</string>
+    <string name="reset_steps">Reset Steps</string>
+    <string name="share_progress">Share Progress</string>
+
+    <!-- Profile -->
+    <string name="add_your_name">Add your name</string>
+    <string name="username_placeholder">\@username</string>
+    <string name="user_email_placeholder">user@example.com</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="your_statistics">📊 Your Statistics</string>
+    <string name="active_habits">Active habits: 0</string>
+    <string name="today_completion">Today\'s completion: 0%</string>
+    <string name="mood_entries">Mood entries: 0</string>
+    <string name="steps_today_count">Steps today: 0</string>
+    <string name="calories_today_count">Calories today: 0 kcal</string>
+    <string name="notification_settings">🔔 Notification Settings</string>
+    <string name="morning_reminder_time">Morning reminder: 08:00</string>
+    <string name="evening_reminder_time">Evening reminder: 21:00</string>
+    <string name="hydration_reminder_interval">Hydration reminder: Every 3 hours</string>
+    <string name="theme_settings">🎨 Theme Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="theme_color">Theme Color</string>
+    <string name="theme_color_display">Theme color: #43A047</string>
+    <string name="change">Change</string>
+    <string name="share_weekly_stats">Share Weekly Stats</string>
+    <string name="logout">Logout</string>
+
+    <!-- Notifications -->
+    <string name="morning_notification_title">🌅 Good Morning!</string>
+    <string name="morning_notification_message">Ready to start your wellness journey today?</string>
+    <string name="night_notification_title">🌙 Evening Reflection</string>
+    <string name="night_notification_message">How was your wellness journey today?</string>
+    <string name="hydration_notification_title">💧 Hydration Time!</string>
+    <string name="hydration_notification_message">Time to drink a glass of water</string>
+
+    <!-- Messages -->
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="registration_successful">Registration successful! Please login.</string>
+    <string name="username_exists">Username already exists</string>
+    <string name="username_required">Username is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="email_required">Email is required</string>
+    <string name="name_required">Name is required</string>
+    <string name="passwords_dont_match">Passwords don\'t match</string>
+    <string name="invalid_email">Invalid email format</string>
+
+    <!-- Content Descriptions -->
+    <string name="wellsync_logo">WellSync Logo</string>
+    <string name="add_habit_desc">Add Habit</string>
+    <string name="edit_habit_desc">Edit Habit</string>
+    <string name="delete_habit_desc">Delete Habit</string>
+    <string name="profile_picture_desc">Profile Picture</string>
+</resources>

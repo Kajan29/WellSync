@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.wellsync.fragments.HomeFragment"
+        android:label="@string/nav_home" />
+
+    <fragment
+        android:id="@+id/nav_habits"
+        android:name="com.example.wellsync.fragments.HabitsFragment"
+        android:label="@string/nav_habits" />
+
+    <fragment
+        android:id="@+id/nav_steps"
+        android:name="com.example.wellsync.fragments.StepsFragment"
+        android:label="@string/nav_steps" />
+
+    <fragment
+        android:id="@+id/nav_mood"
+        android:name="com.example.wellsync.fragments.MoodFragment"
+        android:label="@string/nav_mood" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.wellsync.fragments.ProfileFragment"
+        android:label="@string/nav_profile" />
+
+    <fragment
+        android:id="@+id/nav_water_limit"
+        android:name="com.example.wellsync.fragments.WaterLimitFragment"
+        android:label="@string/nav_water_limit" />
+
+</navigation>

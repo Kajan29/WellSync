@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background_gradient"
+    android:padding="12dp">
+
+    <!-- Widget Title with Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/widget_title_background"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/logo"
+            app:tint="@color/surface_color"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/widget_title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/surface_color"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="●"
+            android:textColor="#4CAF50"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Pending Habits Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/widget_item_background"
+        android:padding="8dp"
+        android:layout_marginBottom="6dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_habit_beautiful"
+            app:tint="@color/habit_color"
+            android:contentDescription="@string/widget_pending_habits"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/widget_pending_habits"
+            android:textSize="12sp"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_pending_habits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/widget_default_count"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/habit_color"
+            android:background="@drawable/count_badge_background"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:minWidth="24dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Water Intake Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/widget_item_background"
+        android:padding="8dp"
+        android:layout_marginBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_water_beautiful"
+                app:tint="@color/water_color"
+                android:contentDescription="@string/widget_water_intake"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/widget_water_intake"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/tv_water_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/widget_default_water"
+                android:textSize="11sp"
+                android:textColor="@color/water_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_water"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:progressTint="@color/water_color"
+            android:progressBackgroundTint="@color/progress_background"
+            android:background="@drawable/progress_bar_background" />
+
+    </LinearLayout>
+
+    <!-- Steps Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/widget_item_background"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_steps_beautiful"
+                app:tint="@color/steps_color"
+                android:contentDescription="@string/widget_steps_today"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/widget_steps_today"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/tv_step_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/widget_default_count"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/steps_color" />
+
+            <TextView
+                android:id="@+id/tv_step_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/widget_default_steps"
+                android:textSize="11sp"
+                android:textColor="@color/secondary_text" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_steps"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:progressTint="@color/steps_color"
+            android:progressBackgroundTint="@color/progress_background"
+            android:background="@drawable/progress_bar_background" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors (60%) - Emerald Green -->
+    <color name="primary_color">#43A047</color>
+    <color name="primary_color_dark">#2E7D32</color>
+    <color name="primary_color_light">#66BB6A</color>
+
+    <!-- Secondary Colors (30%) - Seafoam Blue -->
+    <color name="secondary_color">#80DEEA</color>
+    <color name="secondary_color_dark">#4DD0E1</color>
+    <color name="secondary_color_light">#B2EBF2</color>
+
+    <!-- Accent Colors (10%) - Golden Yellow -->
+    <color name="accent_color">#FFD740</color>
+    <color name="accent_color_dark">#FFC107</color>
+    <color name="accent_color_light">#FFECB3</color>
+
+    <!-- Background Colors -->
+    <color name="background_color">#F8F9FA</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- Progress Colors -->
+    <color name="progress_background">#E0E0E0</color>
+
+    <!-- Bottom Navigation Colors -->
+    <color name="bottom_nav_color">@color/primary_color</color>
+
+    <!-- Status Colors -->
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="error_color">#F44336</color>
+    <color name="info_color">#2196F3</color>
+
+    <!-- Widget Specific Colors -->
+    <color name="primary_text">@color/text_primary</color>
+    <color name="secondary_text">@color/text_secondary</color>
+    <color name="habit_color">@color/primary_color</color>
+    <color name="water_color">@color/info_color</color>
+    <color name="steps_color">@color/warning_color</color>
+</resources>

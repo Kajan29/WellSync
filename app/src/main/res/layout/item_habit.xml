@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardHabit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkboxHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:buttonTint="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvHabitName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Habit Name"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginEnd="12dp" />
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_edit"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Edit Habit"
+            app:tint="?attr/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_delete"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Delete Habit"
+            app:tint="@android:color/holo_red_dark" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
