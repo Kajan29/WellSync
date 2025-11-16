@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Step Counter Display -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="?attr/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👣"
+                    android:textSize="48sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvStepsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvStepsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steps Today"
+                    android:textColor="?attr/colorSecondary"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarSteps"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="16dp"
+                    android:progressTint="?attr/colorSecondary"
+                    android:progressBackgroundTint="?attr/colorSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tvProgressPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Goal Status -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardGoalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvStepGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goal: 10000 steps"
+                    android:textSize="16sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSetGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Daily Goal"
+                    android:textSize="14sp"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:textColor="@android:color/white"
+                    style="@style/Widget.Material3.Button" />
+
+                <TextView
+                    android:id="@+id/tvGoalStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10000 steps to go!"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorPrimary"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Statistics Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📏"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0 km"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tvDistanceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distance"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔥"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 kcal"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorSecondary" />
+
+                    <TextView
+                        android:id="@+id/tvCaloriesLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calories"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Motivation Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="?attr/colorSecondary">
+
+            <TextView
+                android:id="@+id/tvMotivation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let's get moving! Every step counts 👣"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textStyle="italic" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResetSteps"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Reset Steps"
+                android:layout_marginTop="9dp"
+                android:textSize="15sp"
+                android:textColor="?attr/colorPrimary"
+                app:strokeColor="?attr/colorPrimary"
+                app:icon="@drawable/ic_refresh"
+                app:iconTint="?attr/colorPrimary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShareProgress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Share Progress"
+                app:backgroundTint="?attr/colorPrimary"
+                app:icon="@drawable/ic_share"
+                app:iconTint="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
