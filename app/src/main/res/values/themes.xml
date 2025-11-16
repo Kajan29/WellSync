@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.WellSync" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondaryVariant">@color/secondary_color_dark</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/primary_color_dark</item>
+    </style>
+
+    <style name="Theme.WellSync" parent="Base.Theme.WellSync" />
+
+    <!-- Theme variants for different colors -->
+    <style name="Theme.WellSync.Emerald" parent="Base.Theme.WellSync">
+        <item name="colorPrimary">#43A047</item>
+        <item name="colorPrimaryVariant">#2E7D32</item>
+        <item name="colorSecondary">#80DEEA</item>
+        <item name="android:statusBarColor">#2E7D32</item>
+    </style>
+
+    <style name="Theme.WellSync.Ocean" parent="Base.Theme.WellSync">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#1976D2</item>
+        <item name="colorSecondary">#90CAF9</item>
+        <item name="android:statusBarColor">#1976D2</item>
+    </style>
+
+    <style name="Theme.WellSync.Sunset" parent="Base.Theme.WellSync">
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryVariant">#F57C00</item>
+        <item name="colorSecondary">#FFB74D</item>
+        <item name="android:statusBarColor">#F57C00</item>
+    </style>
+
+    <style name="Theme.WellSync.Purple" parent="Base.Theme.WellSync">
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="colorPrimaryVariant">#7B1FA2</item>
+        <item name="colorSecondary">#CE93D8</item>
+        <item name="android:statusBarColor">#7B1FA2</item>
+    </style>
+
+    <style name="Theme.WellSync.Pink" parent="Base.Theme.WellSync">
+        <item name="colorPrimary">#E91E63</item>
+        <item name="colorPrimaryVariant">#C2185B</item>
+        <item name="colorSecondary">#F48FB1</item>
+        <item name="android:statusBarColor">#C2185B</item>
+    </style>
+
+    <!-- NoActionBar theme for splash, login, register activities -->
+    <style name="Theme.WellSync.NoActionBar" parent="Base.Theme.WellSync">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
